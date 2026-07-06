@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power of the Keyblade</title>
+    <style>
+        /* Import external Kingdom Hearts fonts from Dafont CDN / local names */
+        @import url('https://fonts.cdnfonts.com/css/khmenu'); /* Fallback wrapper if hosting supports it */
+        
+        @font-face {
+            font-family: 'KHGummi';
+            src: url('https://www.dafont.com/khgummi.font'); /* Defined by style guide */
+        }
+        @font-face {
+            font-family: 'KHMenu';
+            src: url('https://www.dafont.com/khmenu.font'); /* Defined by style guide */
+        }
+
+        /* Root variables matching the Style Guide Color Palette */
+        :root {
+            --primary-color: #d73826;
+            --secondary-color: #f7c07b;
+            --accent-1: #26C5D7;
+            --accent-2: #7BB2F7;
+            --bg-light: #f9f9f9;
+        }
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'KHMenu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Paragraph Font */
+            background-color: var(--bg-light);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar Layout & Color styling */
+        header {
+            width: 100%;
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .site-title {
+            font-family: 'KHGummi', 'Arial Black', sans-serif; /* Heading Font */
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-links .active {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        /* Main Content Wireframe Container */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Logo Area (The Square Placeholder from wireframe) */
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Typography Main Settings */
+        h1 {
+            font-family: 'KHGummi', 'Arial Black', sans-serif; /* Heading Font */
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+            text-align: justify; /* Matches the square alignment blocks in the wireframe text box */
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        /* Footer Accent Details */
+        footer {
+            margin-top: auto;
+            width: 100%;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--accent-1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nav bar at top of website -->
+    <header>
+        <nav>
+            <div class="site-title">The Power of the Keyblade</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="abilities.html">Abilities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Matching the Wireframe Structure -->
+    <main>
+        <!-- Logo Image Placeholder Box -->
+        <div class="logo-container">
+            <img src="logo.png" alt="The Power of the Keyblade Logo" class="logo-img">
+        </div>
+
+        <!-- Content Section -->
+        <h1>Welcome</h1>
+        <p class="welcome-text">
+            The Keyblade is one of the most recognizable symbols of the Kingdom Hearts series. While it resembles a key-shaped sword, it is far more than an ordinary weapon. The Keyblade is a mystical instrument capable of choosing its own wielder, protecting hearts, sealing worlds, wielding powerful magic, and much more. Throughout the series, Keyblades play a central role in the battle between light and darkness, making them essential to both the story and gameplay. This website explores what the Keyblade is, how it is obtained, and the many extraordinary abilities it possesses.
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2026 The Power of the Keyblade. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
