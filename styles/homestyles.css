@@ -1,4 +1,35 @@
 /* Global Layout Styles */
+
+
+body {
+    background: #f7c07b;
+    color: #333;
+}
+
+
+nav {
+    height: 60px;
+    background: #26C5D7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+
+nav h2 {
+    color:white;
+}
+
+
+.links a {
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:bold;
+}
+
 body {
     margin: 0;
     padding: 0;
