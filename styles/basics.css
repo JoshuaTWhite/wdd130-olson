@@ -90,6 +90,8 @@ nav {
     object-fit: contain;
 }
 
+
+
 /* Typography Main Settings */
 h1 {
     font-family: 'KHGummi', 'Arial Black', sans-serif; 
@@ -122,7 +124,7 @@ p {
 /*Wielders Imgs*/
 #img-container-1 {
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     place-items: center;
 }
@@ -151,7 +153,7 @@ p {
 #img-container-2 {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
 }
 
@@ -184,3 +186,26 @@ footer {
     font-size: 0.9rem;
     border-top: 4px solid var(--accent-1);
 }
+
+/* other images*/
+#logo_1 {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#kingdom_key {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#Bequeathing {
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+
